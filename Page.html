@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Josefin+Sans:wght@300&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="headd">Hi, My name is Malika.</h1>
+    <h1 class="headd">
+      This is <span class="heaad">Khaja Haseeb Akhtar.</span>
+    </h1>
+    <div id="content">
+      <div class="container">
+        <div class="flipper">
+          <div class="front">
+            <img class="img" src="asstes/3.jpg" alt="img" />
+            <p class="caption">Who is this?</p>
+          </div>
+          <div class="back">
+            <a href="#">
+              <h1>Who is this?</h1>
+            </a>
+            <p class="description">
+              This guy makes me experience extreme heights of every emotion. It
+              could be anger, love or patience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="flipper">
+          <div class="front">
+            <img class="img" src="asstes/2.jpg" alt="img" />
+            <p class="caption">What do we do?</p>
+          </div>
+          <div class="back">
+            <a href="#">
+              <h1>What do we do?</h1>
+            </a>
+            <p class="description">
+              We love and hate each other. It's like we cant live without each
+              other but still fight like cats and dogs. Why? Simple, we only
+              fight with whom we love. A relationship where we dont test each
+              other's patience is a long-lost relationship.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="flipper">
+          <div class="front">
+            <img class="img" src="asstes/1.jpg" alt="img" />
+            <p class="caption">Are we OK?</p>
+          </div>
+          <div class="back">
+            <a href="#">
+              <h1>Are we OK?</h1>
+            </a>
+            <p class="description">
+              Maybe.. Sometimes we are, and sometimes we are not. I love this
+              guy so much. But, he doesnt let me love him because 23hrs out of
+              24 hrs he just irritates the shit out of me.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="pop" href="#" onclick="show('popup')">Statement</button>
+
+    <!-- This is what will be included inside the popup -->
+    <div class="popup" id="popup">
+      <p>This is a popup!</p>
+      <p>
+        This is a humble.. VERY HUMBLE REMAINDER THAT PLEASE
+        <span class="chill">CHILL</span>
+      </p>
+      <a href="#" onclick="hide('popup')">Close</a>
+    </div>
+
+    <button class="pop" href="#" onclick="show('popupk')">Question</button>
+
+    <div class="popupk" id="popupk">
+      <p>HI</p>
+      <p>
+        When you click on this button, it will take you to a page where you will
+        be asked an very cruicial question. A VERY IMPORTANT ONE. ANSWER
+        CAREFULLY <BR></BR> <button class="page-btn"><a href="Index.html"> Click Me</a></button>
+      </p>
+      <a href="#" onclick="hide('popupk')">Close</a>
+    </div>
+    <script>
+      // JavaScript goes here
+
+      $ = function (id) {
+        return document.getElementById(id);
+      };
+
+      var show = function (id) {
+        $(id).style.display = "block";
+      };
+      var hide = function (id) {
+        $(id).style.display = "none";
+      };
+    </script>
+  </body>
+</html>

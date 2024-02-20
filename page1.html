@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Josefin+Sans:wght@300&family=Katibeh&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="asstes/4.jpg" />
+      <img src="asstes/5.jpg" />
+      <img src="asstes/9.jpg" />
+    </div>
+    <div class="main">
+      <p>
+        So, This the thing that i said in the morning. And you shouted as if I
+        am cheating on you :) <br />Khair, I dont know what is happening or what
+        is going to happen. I just know this that I LOVE YOU. These 3 years of
+        my life were a roller coaster. A HELL NUMBER OF UPs and DOWNs. Before
+        you came into my life, life was just a mess and i was messing it even
+        more. Embarressing my parents even more. You stepped in and.. made me
+        realise that I am worth something. Thank you for that. I dont know what
+        is going to happen in the next few days or next few months. I just to
+        want to be with you forever so that I can spend my life here and
+        hereafter just with you. InShaAllah. <br />
+        <span> Do you want to know how did I fall in love with you?<br /></span>
+        <span>Click at the button below</span>
+      </p>
+    </div>
+
+    <button id="move" class="js-click">Make me fall.</button>
+    <div class="octo">
+      <div class="head">
+        <div class="eye">
+          <div class="iris"></div>
+        </div>
+        <div class="eye">
+          <div class="iris"></div>
+        </div>
+      </div>
+
+      <div class="tentacle t1"></div>
+      <div class="tentacle t2"></div>
+      <div class="tentacle t3"></div>
+      <div class="tentacle t4"></div>
+    </div>
+    <div class="page2">
+      <p>
+        Wanna know more. Let's Go!! >>>
+        <button><a href="Page.html">:)</a></button>
+      </p>
+    </div>
+  </body>
+  <script>
+    const move = document.querySelector("#move");
+    const octo = document.querySelector(".octo");
+    const $btnclick = document.querySelector(".js-click");
+    $btnclick.addEventListener("mouseover", (e) => {
+      e.target.innerHTML = "AND I FELL IN LOVE";
+    });
+    move.addEventListener("click", (event) => {
+      event.preventDefault();
+      octo.classList.add("swim");
+    });
+  </script>
+</html>
